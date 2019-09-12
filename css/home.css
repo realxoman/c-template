@@ -1,0 +1,682 @@
+/** [ FONT ] **/
+
+@font-face {
+  font-family: IRANSans-ExtraLight;
+  src: url(../fonts/IRANSans/IRANSansWeb_UltraLight.ttf); 
+}
+
+@font-face {
+  font-family: IRANSans-Light;
+  src: url(../fonts/IRANSans/IRANSansWeb_Light.ttf); 
+}
+
+@font-face {
+  font-family: IRANSans-Regular;
+  src: url(../fonts/IRANSans/IRANSansWeb.ttf); 
+}
+@font-face {
+  font-family: 'IRANSans-Medium';
+  src: url(../fonts/IranSans/IRANSansWeb_Medium.ttf); 
+}
+
+@font-face {
+  font-family: IRANSans-Bold;
+  src: url(../fonts/IRANSans/IRANSansWeb_Bold.ttf); 
+}
+
+@font-face {
+  font-family: IRANSans-SemiBold;
+  src: url(../fonts/IRANSans/IRANSansWeb_Black.ttf); 
+}
+
+/*---------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
+/** font settings  **/
+
+/* pre, code, article * {
+  font-family: 'Vazir Code', 'Vazir Code Hack', monospaced !important;
+} */
+
+body, div, p, a, ul, li, span, i, h1, h2, h3, h4, h5, h6, footer, nav, p, button, textarea, input {
+  font-family: 'IRANSans-Medium' ;
+  direction: rtl;
+}
+a:hover{
+  text-decoration: none !important;
+}
+strong, b {
+  font-family: 'IRANSans-Bold';
+  direction: rtl;
+}
+h1 {font-size: 36px}
+h2 {font-size: 30px}
+h3 {font-size: 24px}
+h4 {font-size: 18px}
+h5 {font-size: 14px}
+h6 {font-size: 12px}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/** body background  **/
+body{
+  background-color: #f5f5f5
+}
+
+/** CUSTOMIZE **/
+
+/** customize card  **/
+.card-panel{
+    -webkit-transition: -webkit-box-shadow .25s;
+    -moz-transition : .25s ease;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+}
+.my-shadow{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.card-scale{
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+  transform: scale(1);
+
+}
+.card-scale:hover{
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+    transition: 0.6s ease;
+    transform: scale(1.032);
+
+}
+
+/** customize button  **/
+.mybtn-success{
+  font-family: 'IRANSans-Regular';
+    border-radius: 20px;
+    -webkit-transition: 0.6s ease;
+    -moz-transition : 0.6s ease;
+    transition: 0.6s ease;
+}
+.mybtn-success:hover{
+  /* box-shadow: 0 0px 3px 0 rgb(0, 158, 137), 0 0px 0px -2px rgb(0, 158, 137), 0 1px 0px 0px rgba(0, 158, 137); */
+  transition: 0.6s ease;
+  background: white !important;
+  color : green;
+  border : 1px solid green;
+}
+
+.mybtn-primary{
+  font-family: 'IRANSans-Regular';
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+}
+.mybtn-primary:hover{
+/* box-shadow: 0 0px 3px 0 blue, 0 0px 0px -2px blue, 0 1px 0px 0px blue; */
+-webkit-transition: 0.6s ease;
+-moz-transition : 0.6s ease;
+transition: 0.6s ease;
+background: white !important;
+color : blue;
+border : 1px solid blue;
+}
+
+.mybtn-danger{
+  font-family: 'IRANSans-Regular';
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+}
+.mybtn-danger:hover{
+/* box-shadow: 0 0px 3px 0 red, 0 0px 0px -2px red, 0 1px 0px 0px red; */
+-webkit-transition: 0.6s ease;
+-moz-transition : 0.6s ease;
+transition: 0.6s ease;
+background: white !important;
+color : red;
+border : 1px solid red;
+}
+
+.mybtn-warning{
+  font-family: 'IRANSans-Regular';
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+.mybtn-warning:hover{
+/* box-shadow: 0 0px 3px 0 rgb(255, 102, 0), 0 0px 0px -2px rgb(255, 102, 0), 0 1px 0px 0px rgb(255, 102, 0); */
+-webkit-transition: 0.6s ease;
+-moz-transition : 0.6s ease;
+transition: 0.6s ease;
+background: white !important;
+color : rgb(255, 102, 0);
+border : 1px solid rgb(255, 102, 0);
+}
+
+.mybtn-dark{
+  font-family: 'IRANSans-Regular';
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.mybtn-dark:hover{
+/* box-shadow: 0 0px 3px 0 black, 0 0px 0px -2px black, 0 1px 0px 0px black; */
+-webkit-transition: 0.6s ease;
+-moz-transition : 0.6s ease;
+transition: 0.6s ease;
+background: white !important;
+color : black;
+border : 1px solid black;
+}
+
+.mybtn-secondary{
+  font-family: 'IRANSans-Regular';
+  border-radius: 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.mybtn-secondary:hover{
+/* box-shadow: 0 0px 3px 0 grey, 0 0px 0px -2px grey, 0 1px 0px 0px grey; */
+-webkit-transition: 0.6s ease;
+transition: 0.6s ease;
+background: white !important;
+color : grey;
+border : 1px solid grey;
+}
+
+/** customize input  **/
+.form-control:focus{
+  background-color: hsl(0, 0%, 90%) !important;
+  /* box-shadow: 0 0 0 0.2rem rgba(0, 255, 191, 0.705) */
+}
+
+/** navbar styles  **/
+
+
+nav a img{
+  height: 60px;
+}
+
+nav ul a {
+	color :#027b43  !important;
+	-webkit-transition: 1s;
+	transition: 1s;
+
+}
+
+.my-dropdown{
+  line-height: 2.5 ;
+  border-radius: 25px;
+  padding: 15px;
+  transition: 1s
+
+}
+
+.my-dropdown a:hover{
+  background: white !important;
+}
+
+
+.my-dropdown .link:after{
+	top:80%;
+	content: '';
+	position: absolute;
+	width: 0; 
+	height:2.5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	background: #005e61;
+	transition: width .8s ease;
+	-webkit-transition: width .8s ease;
+	margin-bottom: 3px;
+	right:0;
+  left: 0;
+  border-radius: 20px;
+  }
+/** top cards  **/
+
+.top-cards:hover{
+  border : 2px solid black;
+  text-decoration: none;
+}
+
+
+  .service-box .ico-circle{
+    transition: all 500ms ease;
+    font-size: 3.5rem;
+    padding: 13px;
+  }
+  .service-box .service-ico{
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+  }
+
+  .service-box{
+    height: 270px;
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+.energy-color{
+  color : #00d382;
+}
+  .energy {
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #00d382;
+    display: block; 
+}
+.service-box:hover .energy:hover{
+  transition: all 500ms ease;
+    color: #fff;
+    background-color: #00d382;
+    box-shadow: 0 0 0 10px #00d38228;
+}
+
+
+.teach-color{
+  color : #0090d3;
+}
+  .teach {
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0090d3;
+    display: block; 
+}
+.service-box:hover .teach:hover{
+  transition: all 500ms ease;
+    color: #fff;
+    background-color: #0090d3;
+    box-shadow: 0 0 0 10px #0090d327;
+}
+
+
+.programing-color{
+  color : #cfd300;
+}
+  .programing {
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #cfd300;
+    display: block; 
+}
+.service-box:hover .programing:hover{
+  transition: all 500ms ease;
+    color: #fff;
+    background-color: #cfd300;
+    box-shadow: 0 0 0 10px #cfd30028;
+}
+
+
+.game-color{
+  color : #d33c00;
+}
+  .game {
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #d33c00;
+    display: block; 
+}
+.service-box:hover .game:hover{
+  transition: all 500ms ease;
+    color: #fff;
+    background-color: #d33c00;
+    box-shadow: 0 0 0 10px #d33c0027;
+}
+
+
+.fa, .fab, .fad, .fal, .far, .fas{
+	line-height: 1 !important;
+	display: contents ;
+}
+.link{
+	position: relative;
+  }
+  
+.link:after{
+	top:140%;
+	content: '';
+	position: absolute;
+	width: 0; 
+	height:2.5px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	background: #027b43;
+	transition: width .8s ease;
+	-webkit-transition: width .8s ease;
+	margin-bottom: 3px;
+	right:0;
+  left: 0;
+  border-radius: 20px;
+  }
+   
+.link:hover:after{
+  border-radius: 20px;
+	width: 60%;
+	display: flex;
+	background: #027b43;
+  }
+
+  .home-navbar{
+    -webkit-transition: 1s ease;
+    -moz-transition : 1s ease;
+    transition: 1s ease;
+  }
+  .sticky-top{
+    -webkit-transition: 1s ease;
+    -moz-transition : 1s ease;
+    transition: 1s ease;  
+    margin-top: 0 !important;
+    position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+  }
+/** slider  **/
+.carousel-item img{
+  max-height: 600px;
+}
+
+/** introduce cec home page  **/
+.introduce-cec{
+  border-bottom: 2px solid #027b43;
+}
+.c-card-panel{
+  border-radius: 12px !important;
+}
+.introduce-cec{
+  color : #027b43;
+  font-weight: 600;
+}
+.c-card-panel .c-header{
+  font-family: 'IRANSans-Bold';
+color : #027b43;
+line-height: 2
+}
+.c-card-panel .c-date{
+  font-family: 'IRANSans-Medium';
+  color : #027b43;
+  line-height: 2;
+}
+.c-card-panel .c-description{
+  line-height: 2;
+  text-align: justify;
+  padding:20px;
+}
+
+/** Course cards  **/
+.card-body .c-header{
+  font-family: 'IRANSans-Bold';
+  font-size: 16px;
+  color : #027b43;
+  line-height: 2
+}
+
+.c-text-description{
+  font-family: 'IRANSans-Medium';
+  text-align: justify;
+  color : #027b42d7 !important;
+  font-size: 15px;
+}
+.c-text-teacher{
+  color : rgb(63, 63, 63);
+  font-size: 15px;
+}
+.card-img-top{
+  border-radius: 25px;
+}
+
+/** footer  **/
+.go-top{
+  padding: 5px
+}
+.footer-links{
+  -webkit-transition: 1s ease;
+  -moz-transition : 1s ease;
+  transition: 1s ease;  
+  line-height: 2;
+}
+
+.myfooter a {
+  -webkit-transition: 0.06s ease;
+  -moz-transition : 0.06s ease;
+  transition: 0.06s ease;  
+  color : #027b43;
+  font-size: 16px;
+
+}
+
+.myfooter a:hover {
+  -webkit-transition: 0.06s ease;
+  -moz-transition : 0.06s ease;
+  transition: 0.06s ease;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.footer-links > ul {
+  list-style-type : none !important;
+}
+.myfooter{
+  padding-bottom: 0px;
+  background-color: #f8f8f8;
+}
+.myfooter hr{
+  border: 0.5px solid #d4d4d4;
+  border-radius: 25px;
+}
+.footer-links .social-icon img{
+  padding: 7px !important;
+  height: 85px;
+  margin: 6px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  color : black;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+}
+
+
+.footer-links .social-icon i{
+  margin: 6px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  padding: 13px;
+  font-size: 30px;
+  color : black;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+}
+.footer-links .social-icon img:hover {
+  background-color: #fff200;
+  padding: 13px;
+  font-size: 30px;
+  color : white;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+
+.footer-links .social-icon .fa-telegram:hover {
+  background-color: rgb(0, 136, 204);
+  padding: 13px;
+  font-size: 30px;
+  color : white;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+
+.footer-links .social-icon .fa-instagram:hover {
+  background-color: rgb(193,53,132);
+  padding: 13px;
+  font-size: 30px;
+  color : white;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+
+.footer-links .social-icon .fa-twitter:hover {
+  background-color: rgb(29, 161, 242);
+  padding: 13px;
+  font-size: 30px;
+  color : white;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+
+.footer-links .django-logo{
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0 auto !important;
+}
+.footer-links .django-logo img{
+  height: 110px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+
+}
+.footer-links .django-logo img:hover{
+  height: 120px;
+  -webkit-transition: 0.6s ease;
+  -moz-transition : 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.footer-copyright{
+  border-bottom: 3px solid grey;
+  background-color: #e7e7e7;
+}
+
+.footer-copyright p {
+  font-family: 'IRANSans-Light';
+  padding: 5px;
+  margin : 0 auto !important;
+}
+
+.footer-copyright a {
+  font-family: 'IRANSans-Medium';
+  padding: 5px;
+  margin : 0 auto !important;
+}
+
+
+/*** RESPONSIVE  ***/
+
+
+/** smaller than  **/
+
+/** PHONE **/
+@media (max-width: 576px) { 
+  .footer-copyright a , p {
+    font-size : 14px;
+  }
+ }
+
+
+/** LARGE PHONE **/
+@media (max-width: 768px) { 
+  
+ }
+
+
+/** TABLET **/
+@media (max-width: 992px) { 
+  .link:after{
+    display: none !important;
+  }
+  
+    .nav-link{
+      text-align: right;
+      line-height: 2
+    } 
+ }
+
+
+/** DESKTOP **/
+@media (max-width: 1200px) { 
+  
+ }
+
+
+
+
+ /** bigger than  **/
+
+ /** PHONE **/
+@media (min-width: 576px) { 
+  .hide-in-desktop{
+    display: none;
+  }
+ }
+
+
+
+/** LARGE PHONE **/
+@media (min-width: 768px) { 
+  
+ }
+
+
+
+/** TABLET **/
+@media (min-width: 992px) { 
+  
+ }
+
+ /** DESKTOP **/
+@media (min-width: 1200px) { 
+  
+ }

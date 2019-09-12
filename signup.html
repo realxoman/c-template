@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<!--* page title *-->
+	<title>انجمن علمی مهندسی کامپیوتر | دانشگاه آزاد کرج</title>
+
+	<!--* favicon *-->
+	<link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+
+	<!--* meta settings *-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--* bootstrap 4.2.1 rtl css link *-->
+	<link rel="stylesheet" href="lib/bootstrap-4.2.1-rtl/dist/css/rtl/bootstrap.min.css">
+
+	<!--* static css links  *-->
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/signup.css">
+
+
+	<!--* font awsome 5.10 link  *-->
+	<link rel="stylesheet" href="lib/fontawesome-free-5.10.2-web/css/all.min.css">
+
+	
+</head> 
+<body id="top-of-the-page">
+<!--* base top navbar  *-->
+	<header>
+	<div class="container-fluid">
+		<div class="section">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white mt-3 bg-primary rounded shadow home-navbar">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							  </button>
+						<a class="navbar-brand" href="#"><img src="img/Logo3-green.png" alt="cec-logo"> </a>
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						  <ul class="navbar-nav mr-auto">
+							<li class="nav-item  pl-3 pr-3 link">
+							  <a class="nav-link active" href="file:///C:/Users/ASUS/Desktop/cec-template2/home.html">خانه</a>
+							</li>
+							<li class="nav-item pl-3 pr-3 link">
+							  <a class="nav-link" href="#introduce-cec">معرفی انجمن</a>
+							</li>
+							<li class="nav-item dropdown pl-3 pr-3 link">
+							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								دوره ها
+							  </a>
+							  <div class="dropdown-menu my-dropdown" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item link text-left" href="#"><i class="fas fa-code"></i> برنامه نویسی</a>
+								<a class="dropdown-item link text-left" href="#"> <i class="fas fa-desktop"></i> طراحی وب سایت</a>
+								<a class="dropdown-item link text-left" href="#"> <i class="fas fa-gamepad"></i> بازی های ویدیویی</a>
+								<a class="dropdown-item link text-left" href="#"><i class="fab fa-adobe"></i> فتوشاپ</a>
+							  </div>
+							</li>
+						  </ul>
+						  <hr>
+						  <a href="file:///C:/Users/ASUS/Desktop/cec-template2/signup.html"><button class="mybtn-success btn btn-success d-inline mr-3"><i class="fas fa-user-plus"></i> عضویت در انجمن</button></a>
+						  <button class="mybtn-primary btn btn-primary d-inline float-right" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user-tie"></i> ورود</button>
+						</div>
+					  </nav>
+		</div>
+	</div>
+</header>
+
+<!--* signup  *-->
+<br>
+<div class="container">
+	<nav aria-label="breadcrumb">
+					
+		<ol class="breadcrumb">
+				<p> <i class="fa fa-caret-left" aria-hidden="true"></i> شما اینجا هستید:  &nbsp  &nbsp </p> 
+		<li class="breadcrumb-item"><a href="/home.html" class="text-primary">خانه</a></li>
+		<li class="breadcrumb-item active" aria-current="page">ثبت نام در انجمن</li>
+		</ol>
+	</nav>
+</div>
+<div class="limiter" dir="ltr">
+	<div class="container-login100">
+		<div class="wrap-login100">
+			<form action="">
+			<div class="login100-form validate-form" dir="rtl">
+				<div class="row">
+					<span class="login100-form-title">
+						ثبت نام در انجمن علمی مهندسی کامپیوتر	
+									</span>
+					<div class="col-lg-12 col-md-12 sm-12 col-12">
+						<div class="mylable">
+							<h5>نام</h5>
+						</div>
+						<div class="wrap-input100">
+							<input class="input100" type="text" name="cfname" required title = "" >
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-user-circle my_fa" aria-hidden="true"></i>
+							</span>
+
+						</div>
+
+						<div class="mylable">
+							<h5>نام خانوادگی</h5>
+						</div>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="text" name="clname" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-user-circle my_fa" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<!-- <div class="mylable">
+							<h5>نام کاربری</h6>
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="&nbsp; یک نام کاربری انتخاب کنید">
+							<input class="input100" type="text" name="cusername">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-user my_fa" aria-hidden="true"></i>
+							</span>
+						</div> -->
+						<div class="mylable">
+						<h5>انتخاب دانشگاه</h5>
+						</div>
+						  <div class="wrap-input100 validate-input">
+							<select class="custom-select input100 my-select-option" id="inputGroupSelect01">
+							  <div class="myoptions">
+							<option value="1">دانشگاه آزاد کرج</option>
+							<option value="2">سایر دانشگاه ها</option>
+							<option value="3">دانشجو نیستم</option>
+						</div>
+						  </select>
+						  <span class="symbol-input100">
+								<i class="fas fa-school my_fa"> </i>
+								</span>
+						  </div>
+						
+
+						<div class="mylable">
+							<h5>پست الکترونیک</h5>
+						</div>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="email" name="cemail" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-envelope my_fa" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="mylable">
+							<h5>شماره دانشجویی</h6>
+						</div>
+						<p class="text-center pt-1">در صورتی که دانشجوی دانشگاه آزاد کرج هستید این فیلد را پر کنید</p>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="number" name="cstudentnumber" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fas fa-user-graduate my_fa"></i>
+							</span>
+						</div>
+
+						<div class="mylable">
+							<h5>تلفن همراه</h5>
+						</div>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="number" name="cphonenumber021" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-phone my_fa" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="mylable">
+							<h5>کلمه عبور</h6>
+						</div>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="password" name="cpassword" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-lock my_fa" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="mylable">
+							<h5>تکرار کلمه عبور</h5>
+						</div>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="password" name="cpassword-again" required title = "">
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-lock my_fa" aria-hidden="true"></i>
+							</span>
+						</div>
+
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn" style="width: 50%">
+							ثبت نام کن
+						</button>
+					</div>
+				</div>
+			</form>
+			<!-- <div class="text-center signup_footer">
+				<a class="txt2" href="#loginModal" data-toggle="modal" data-target="#loginModal">
+					حساب کاربری دارم
+					<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+				</a>
+			</div> -->
+		</div>
+	</form>
+	</div>
+</div>
+<br>
+
+<!--* Login Modal *-->
+<div class="modal fade " id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content ">
+			<div class="modal-header justify-content-center">
+				<h4 class="modal-title" id="exampleModalLabel ">ورود به سایت</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding-top: 0; margin: 0;right: 0 !important; position: absolute;">
+						<span aria-hidden="true">&times;</span>
+			</div>
+
+			<div class="modal-body ">
+					<form>
+							<div class="form-group">
+									<label for="username" class="col-form-label"><i class="fas fa-user-circle text-secondary"></i> نام کاربری </label>
+									<input name ="cecusername" type="text" class="form-control" id="username" title="" required >
+								</div>
+								<div class="form-group">
+									<label for="password" class="col-form-label"> <i class="fas fa-lock text-secondary"></i> کلمه عبور</label>
+									<input name = "cecpassword"  type="password" class="form-control" id="password" title="" required>
+									<h6 onclick="ShowPass()" class="text-right pt-1"style="cursor:pointer"> <i  class="far fa-eye"></i>  مشاهده کلمه عبور</h6>
+								</div>
+			</div>
+			<div class="modal-footer justify-content-start">
+				<button type="submit" class="btn btn-info w-25 mybtn-dark">ورود</button>
+			</div>
+					</form>
+		</div>
+	</div>
+</div>
+
+<!--* Footer  *-->
+<footer>
+	<br>
+	<div class="card-panel myfooter">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-12 footer-links mb-4">
+				<h5 class="text-center">لینک های مفید</h5>
+				<hr class="w-75">
+				<ul>
+					<li>
+						<a href=""><i class="fas fa-home" aria-hidden="true"></i> خانه</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-users" aria-hidden="true"></i> معرفی انجمن</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-book-open" aria-hidden="true"></i> دوره ها</a>
+					</li>
+					<li>
+						<a href=""> <i class="fas fa-user-plus" aria-hidden="true"></i> عضویت در انجمن</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-12 footer-links mb-3">
+					<h5 class="text-center">راه های ارتباطی</h5>
+					<hr class="w-75">
+					<ul>
+						<li>
+							<a href=""><i class="fas fa-phone"></i> تماس با ما</a>
+						</li>
+						<li>
+							<a href=""><i class="far fa-comment-dots"></i> ارسال پیام از سایت</a>
+						</li>
+						<li>
+							<a href=""><i class="far fa-envelope"></i> ارسال پست الکترونیک</a>
+						</li>
+						<li>
+							<a href=""><i class="fas fa-building"></i> دانشکده مکاترونیک ، طبقه همکف</a>
+						</li>
+					</ul>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12  footer-links mt-3 mb-3">
+					<ul class="social-icon align-middle px-0">
+						<li class="text-center ">
+							<a href=""><i class=" align-middle d-inline fab fa-telegram rounded-circle"></i></i></a>
+							<a href=""><i class="align-middle d-inline fab fa-instagram rounded-circle"></i></i></a>
+							<a href=""><i class="align-middle d-inline fab fa-twitter rounded-circle"></i></i></a>
+							<a href="#top-of-the-page"><div class="shadow-sm go-top w-50 mx-auto mt-5 d-flex justify-content-center"><i class="fas fa-chevron-circle-up m-0 p-0" style="box-shadow: none ; background-color: #f8f8f8; color:#027b43"></i>&nbsp برگشت به بالا</div></a>
+
+							<!-- <a href=""><img class="rounded-circle" src="https://cdn.iconscout.com/icon/free/png-512/aparat-569197.png"></a> -->
+						</li>
+					</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-12  footer-links mt-2 d-flex ">
+					<ul class="django-logo">
+						<li>
+							<a href="https://www.djangoproject.com/" target="blank"><img src="https://www.webd4b.com/wp-content/uploads/2019/06/do-web-development-using-python-django.png" alt="cec python django logo"></a>
+							<!-- <a href=""><img class="rounded-circle" src="https://cdn.iconscout.com/icon/free/png-512/aparat-569197.png"></a> -->
+						</li>
+					</ul>
+			</div>
+			
+		</div>
+		<div class="row footer-copyright">
+			<p>طراحی شده توسط<br class="hide-in-desktop"><a href=""> کارگروه برنامه نویسی انجمن علمی مهندسی کامپیوتر</a></p>
+		</div>
+	</div>
+</footer>
+
+	<!--* jquery 3.4.1 js link  *-->
+	<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+
+	<!--* bootstrap 4.2.1 rtl js link  *-->
+	<script src="lib/bootstrap-4.2.1-rtl/dist/js/bootstrap.min.js"></script>
+
+	<!--* static js link  *-->
+	<script src="js/home.js"></script>
+
+</body>
+</html>
